@@ -1,0 +1,140 @@
+@font-face{font-family: 'algerian';src:url('./fonts/Algerian-Regular.ttf');}
+@font-face{font-family: 'courgette';src:url('./fonts/Courgette-Regular.ttf')}
+@font-face{font-family: 'lobster';src:url('./fonts/Lobster-Regular.ttf')}
+.fond-accueil{background:url('./images/coliseeRetouché.jpg');width: 100%;height: 1200px;background-size: cover;}
+#menu{background-color: rgb(17, 7, 7);width: 100%;justify-content: center;}
+.nav-link, #produits{color:white;font-size: 1.3em;font-weight: bold;font-family:'courgette', Verdana, Tahoma, sans-serif;}
+#produits{margin-left: 5px;}
+.nav-link:hover{color:white;}
+.dropdown-item{font-size: 1.2em;font-weight: bold;font-family: 'courgette', Verdana, Tahoma, sans-serif;color:rgb(5, 5, 5);}
+#navbarContent{width: 100%;background-color: rgb(17, 7, 7);opacity: 1;}
+.nav-item, .nav-item-active{width: 230px;}
+#item, #item1, #item2, #item3{margin-bottom: 5px;}
+#accueil{width: 90px;border-bottom: 2px solid white;}
+/***************************************corps*********************************/
+em{font-weight: bold;font-style: italic;color:rgb(17, 7, 7);}
+h2{/*color:rgb(0, 100, 0);*/ color:rgb(17, 7, 7);font-style: italic;font-family: 'algerian',Verdana, Tahoma, sans-serif;font-weight: bold;}
+#presentation{margin-top: 10px;display: flex;flex-direction: row;background:url('./images/pate.png');background-size: cover ;width: 100%;}
+#presentation h1{text-align: center;}
+.slider{width: 60%;margin:auto;margin-top: 10px;}
+.carousel-item img{background-size: cover;height: 400px;}
+.distributeur{text-align: center;}
+.distributeur p{margin-top: 60px;}
+.distributeur h2{margin-top: 30px;text-align: center;}
+#bouton-appel{text-align: center;width: 40%;margin:auto;text-decoration: none;}
+#bouton-appel p{color:white;font-weight: bold; font-family: 'courgette',Verdana, Tahoma, sans-serif; border:3px solid white;padding:5px;}
+#bouton-appel a:hover{text-decoration: none;}
+.text{margin-top: 30px;margin-left: 10px;padding-bottom: 15px;}
+.text h1{font-family: 'algerian';}
+.texteQualite, .texteRespect, .texteFidelite{margin-top: 20px;margin-bottom: 10px;}
+.texteQualite h2{text-align: center;margin-bottom: 10px;}.texteFidelite p{font-size: 1em;}
+.titre{text-align: center;}
+.text p{color:black;font-family:'courgette',Verdana, Tahoma, sans-serif;font-size: 1.5em;}
+.img-boissons{text-align: center;}
+/***********************************footer**********************************/
+.banniere{height: 290px;margin-top:10px;background-color:rgb(17, 7, 7);}
+.footer{height: 290px;display: flex;flex-direction: row;align-items: center;justify-content: center;}
+.img-footer{height: 200px;}
+.img-footer img{height: 200px;}
+.text-footer{padding-left: 20px;}
+.text-footer p{color:white}
+.entité{margin-top: 30px;}
+.mentions p{color:white; padding:5px;border:3px solid white;text-align: center;}.entité a:hover{text-decoration: none;}
+.icone-reseau{display:flex;flex-direction: row;height: 70px;}
+.facebook{margin-right: 30px;}
+/***********************************************************************responsive**********************************************************************/
+@media all and (min-device-width:270px) and (max-width:414px){
+    .fond-accueil{background:url('./images/colisee348x320.jpg');width: 100%;background-size: cover;}
+    #presentation{margin-top: 10px;display: flex;flex-direction: column;}
+    .carousel-item img{background-size: cover;height: 200px;}
+    .slider{width: 80%;margin:auto;margin-top: 10px;}
+    .banniere{height: 400px;margin-top:5px;background-color:rgb(17, 7, 7);}
+    .footer{height: 400px;display: flex;flex-direction: column;align-items: center;justify-content: center;padding-top: 10px;}
+}
+@media all and (min-device-width:270px) and (max-width:320px){
+    .fond-accueil{height: 320px;}
+    .navbar-toggler img{width: 60px;}
+    /*******corps**************/
+    .horaires{flex-direction: column;margin-top: 5px;padding-top: 10px;}
+    .distributeur img{width: 240px;}
+    .text h1{font-size: 1.5em;}
+    .titre{text-align: center;}
+    .titre img{width: 240px;}
+    #bouton-appel{text-align: center;width: 70%;margin:auto;}
+    /*****footer*********/
+    .img-footer img{width: 150px;height: 100px;padding-top: 30px;}
+}
+@media all and (min-width:360px) and (max-width:375px){  /*ok*/
+    .fond-accueil{height: 320px;}
+    .navbar-toggler img{width: 80px;}
+      /*****************corps*********************/
+    .horaires{flex-direction: column;margin-top: 5px;}
+    .distributeur img{width:300px;}
+    .titre img{width: 300px;}
+    .text-qualite h2{font-size: 1rem;}
+    #bouton-appel{text-align: center;width: 60%;margin:auto;}
+    /*****************footer*********************/
+    .img-footer img{width: 200px;height: 140px;padding-top: 30px;}
+}
+@media all and (min-width:376px) and (max-width:414px){ /*ok*/
+    .fond-accueil{height: 380px;}
+    .navbar-toggler img{width: 80px;}
+    .horaires{flex-direction: column;margin-top: 5px;}
+    #bouton-appel{text-align: center;width: 60%;margin:auto;}
+    .distributeur img{width: 340px;}
+    .img-footer img{width: 150px;height: 100px;padding-top: 30px;} 
+}
+
+@media all and (min-width:416px) and (max-width:550px){
+    .fond-accueil{height: 320px;}
+    .distributeur img{width: 400px;}
+    #presentation{margin-top: 10px;display: flex;flex-direction: column;}
+    .carousel-item img{background-size: cover;height: 260px;}
+    .banniere{height: 350px;margin-top:5px;background-color:rgb(17, 7, 7);}
+    .footer{height: 350px;display: flex;flex-direction: row;align-items: center;justify-content: center;padding-top: 10px;}
+    .img-footer img{width: 180px;height: 120px;padding-top: 30px;}
+    .text-footer p{color:white;margin-top: 10px;padding-bottom: 5px;}
+}
+/*@media all and (min-width:551px) and (max-width:769px){
+    .fond-accueil{background:url('./images/colisee4-562x380.jpg');width: 100%;background-size: cover;}
+    .navbar-toggler img{width: 80px;}.text p{color:white;}.horaires{flex-direction: column;}
+    .banniere{height: 400px;margin-top:5px;background-color:rgb(17, 7, 7);}
+    .footer{display: flex;flex-direction: row;align-items: center;justify-content: center;padding-top: 10px;}
+    .text-footer p{color:white;margin-top: 10px;padding-bottom: 5px;}
+}*/
+@media all and (min-width:568px) and (max-width:641px){
+    .fond-accueil{height: 380px;}
+    .distributeur img{width: 480px;}
+    #presentation{margin-top: 10px;display: flex;flex-direction: column;}
+    .footer{height: 300px;}
+    .img-footer img{width: 220px;height: 180px;padding-top: 30px;}
+    .text-footer p{font-size: 1.3em;}
+}
+@media all and (min-width:650px) and (max-width:779px){
+    .fond-accueil{height: 420px;}
+    .horaires{padding-top: 30px;}
+    #presentation{margin-top: 10px;display: flex;flex-direction: column;}
+    .distributeur img{width: 500px;}
+    .carousel-item img{background-size: cover;height: 300px;}
+    .footer{height: 300px;}
+    .img-footer img{width: 220px;height: 180px;padding-top: 30px;}
+    .text-footer p{font-size: 1.3em;}
+}
+@media all and (min-width:780px) and (max-width:899px){
+    .fond-accueil{background:url('./images/colisee4-562x380.jpg');width: 100%;height: 500px;background-size: cover;}
+    .horaires{padding-top: 30px;}
+    .carousel-item img{background-size: cover;height: 200px;}
+}
+@media all and (min-width:900px) and (max-width:1025px){
+    .fond-accueil{width: 100%;height: 500px;background-size: cover;}
+    .horaires{padding-top: 30px;}
+    .carousel-item img{background-size: cover;height: 250px;}
+}
+@media all and (min-width:1026px) and (max-width:1336px){
+    .fond-accueil{background:url('./images/coliseeRetouché.jpg');width: 100%;height: 700px;background-size: cover;}
+    .carousel-item img{background-size: cover;height: 300px;}
+}
+@media all and (min-width:1337px) and (max-width:1397px){
+    .fond-accueil{background:url('./images/coliseeRetouché.jpg');width: 100%;height: 700px;background-size: cover;}
+    .carousel-item img{background-size: cover;height: 310px;}
+}
